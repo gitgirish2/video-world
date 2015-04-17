@@ -23,7 +23,8 @@ public class VideoRentalConfiguration {
         final Movie avatar = new Movie("Avatar");
         final Movie upInTheAir = new Movie("Up In The Air");
         final Movie findingNemo = new Movie("Finding Nemo");
-        return new SetBasedMovieRepository(Arrays.asList(avatar, upInTheAir, findingNemo));
+        final Movie raceGurram = new Movie("Race Gurram",true);
+        return new SetBasedMovieRepository(Arrays.asList(avatar, upInTheAir, findingNemo,raceGurram));
     }
     @Bean
     @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
@@ -31,7 +32,8 @@ public class VideoRentalConfiguration {
         final Customer customer1 = new Customer("James Madison");
         final Customer customer2 = new Customer("Zackery Taylor");
         final Customer customer3 = new Customer("Benjamin Harrison");
-        return new SetBasedCustomerRepository(Arrays.asList(customer1, customer2, customer3));
+        final Customer customer4 = new Customer("Anil Kumar Kodi");
+        return new SetBasedCustomerRepository(Arrays.asList(customer1, customer2, customer3,customer4));
     }
 
 

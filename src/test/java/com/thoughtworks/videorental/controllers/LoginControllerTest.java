@@ -18,9 +18,7 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-/**
- * Created by srideep on 14/12/14.
- */
+
 
 @RunWith(MockitoJUnitRunner.class)
 public class LoginControllerTest {

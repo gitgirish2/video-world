@@ -24,9 +24,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Set;
 
-/**
- * Created by srideep on 13/12/14.
- */
+
 @Controller
 @RequestMapping("/rentals")
 public class RentalController {

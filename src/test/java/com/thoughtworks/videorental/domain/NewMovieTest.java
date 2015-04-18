@@ -20,4 +20,18 @@ public class NewMovieTest {
         assertEquals(3.0,charge);
     }
 
+    @Test
+    public void testShouldGetPointsForOneDay(){
+        Movie movie=new NewMovie("RaceGurram");
+        int points = movie.getPoints(1);
+        assertEquals(2,points);
+    }
+
+    @Test
+    public void testShouldGetPoints(){
+        Movie movie=new NewMovie("RaceGurram");
+        int points = movie.getPoints(4);
+        assertEquals(8,points);
+    }
+
 }

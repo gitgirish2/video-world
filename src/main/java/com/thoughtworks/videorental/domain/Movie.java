@@ -19,4 +19,8 @@ public class Movie {
 
         return daysRented;
     }
+
+    public int getPoints(double charge) {
+        return (int) charge;
+    }
 }

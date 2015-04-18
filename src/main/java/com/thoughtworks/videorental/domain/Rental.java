@@ -37,4 +37,10 @@ public class Rental {
     public LocalDateTime getEndDate() {
         return rentedOn.plus(period);
     }
+
+    public int getPoints() {
+        if (movie.getClass() == NewMovie.class) {
+            return movie.getPoints(getPeriod().getDays());
+        } else return movie.getPoints(movie.getCharge(getPeriod().getDays()));
+    }
 }

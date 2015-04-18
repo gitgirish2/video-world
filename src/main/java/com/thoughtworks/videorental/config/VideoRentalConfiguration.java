@@ -26,8 +26,8 @@ public class VideoRentalConfiguration {
         final Movie upInTheAir = new Movie("Up In The Air");
         final Movie findingNemo = new Movie("Finding Nemo");
         final Movie classicMovie = new ClassicMovie("Race Gurram");
-        final Movie raceGurram = new NewMovie("Race Gurram");
-        return new SetBasedMovieRepository(Arrays.asList(avatar, upInTheAir, findingNemo,raceGurram,classicMovie));
+        final Movie sathya_murthi = new NewMovie("s/o sathya murthi");
+        return new SetBasedMovieRepository(Arrays.asList(avatar, upInTheAir, findingNemo,sathya_murthi,classicMovie));
     }
     @Bean
     @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)

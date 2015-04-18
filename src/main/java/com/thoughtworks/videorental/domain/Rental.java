@@ -40,7 +40,10 @@ public class Rental {
 
     public int getPoints() {
         if (movie.getClass() == NewMovie.class) {
+
             return movie.getPoints(getPeriod().getDays());
-        } else return movie.getPoints(movie.getCharge(getPeriod().getDays()));
+        } else {
+            return movie.getPoints(movie.getCharge(getPeriod().getDays()));
+        }
     }
 }

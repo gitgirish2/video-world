@@ -12,7 +12,7 @@
 	    	<option value="${customer.name}">${customer.name}</option>
 	    	</#list>
 		</select>
-    	<input type="submit" value="login" />
+    	<input type="submit" value="login" id="loginBtn"/>
 	</form>
     <#include "includes/footer.ftl"/>
 </body>

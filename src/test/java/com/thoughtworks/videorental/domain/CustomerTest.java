@@ -42,7 +42,8 @@ public class CustomerTest {
     public void testEmpty() throws Exception {
         String noRentalsStatement =
                 "Rental Record for John Smith\n"
-                        + "Amount charged is $0.0";
+                        + "Amount charged is $0.0" +
+                        "\n Points are0";
         assertEquals(noRentalsStatement, customer.statement(EMPTY_RENTALS));
     }
 
@@ -55,7 +56,8 @@ public class CustomerTest {
                         + "  LA Confidential  -  $2.0\n"
                         + "  Star Trek 13.2  -  $1.0\n"
                         + "  Wallace and Gromit  -  $6.0\n"
-                        + "Amount charged is $13.0";
+                        + "Amount charged is $13.0"
+                        + "\n Points are13";
         assertEquals(expected, customer.statement(mixedRentals));
     }
 

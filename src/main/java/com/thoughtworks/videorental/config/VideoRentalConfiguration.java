@@ -3,6 +3,7 @@ package com.thoughtworks.videorental.config;
 import com.thoughtworks.videorental.domain.ClassicMovie;
 import com.thoughtworks.videorental.domain.Customer;
 import com.thoughtworks.videorental.domain.Movie;
+import com.thoughtworks.videorental.domain.NewMovie;
 import com.thoughtworks.videorental.domain.repository.CustomerRepository;
 import com.thoughtworks.videorental.domain.repository.MovieRepository;
 import com.thoughtworks.videorental.repository.SetBasedCustomerRepository;
@@ -24,9 +25,9 @@ public class VideoRentalConfiguration {
         final Movie avatar = new Movie("Avatar");
         final Movie upInTheAir = new Movie("Up In The Air");
         final Movie findingNemo = new Movie("Finding Nemo");
-        final Movie raceGurram = new Movie("Race Gurram",true);
-        final Movie newClassicMovie = new ClassicMovie("Race Gurram");
-        return new SetBasedMovieRepository(Arrays.asList(avatar, upInTheAir, findingNemo,raceGurram));
+        final Movie classicMovie = new ClassicMovie("Race Gurram");
+        final Movie raceGurram = new NewMovie("Race Gurram");
+        return new SetBasedMovieRepository(Arrays.asList(avatar, upInTheAir, findingNemo,raceGurram,classicMovie));
     }
     @Bean
     @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
